@@ -1,0 +1,85 @@
+1. to allow graphical application programs start logged at root directory
+
+   xhost +si:localuser:root
+
+2. to prevent graphical application programs start logged at root directory
+
+   xhost -si:localuser:root
+
+3. Synaptic Packages Manager
+
+4. Bash is the GNU shell
+
+5. Samba/SambaServer Guide
+
+6. Git and GitHub
+   Download for Linux Release
+   https://git-scm.com/
+
+   Create (Sign up) a account is github OR Sign in
+   https://github.com/
+   
+   STEPS
+   1. For the latest stable version for your release of Debian/Ubuntu
+   $ sudo apt-get update
+   $ sudo apt-get install git
+
+   2. For Ubuntu, this PPA provides the latest stable upstream Git version
+      Adding this PPA to your system
+      (You can update your system with unsupported packages from this untrusted PPA by adding ppa:git-core/ppa to your system's       
+      Software Sources.)
+ 
+      $ sudo add-apt-repository ppa:git-core/ppa
+      $ sudo apt-get update
+     
+      Set a user name for git   
+      $ git config --global user.name "ericchong1122"
+      $ git config --global user.email "qyms88@gmail.com"
+
+   3. Create Directory 
+      $ sudo mkdir /hoe/eric/gitrepo
+
+      ALLOW PERMISSION FOR gitrepo Directory
+      $ sudo su
+  
+      OUTPUT: (after sudo su)
+      eric@eric-ubuntu:~/gitrepo$ sudo su
+      root@eric-ubuntu:/home/eric/gitrepo# ls
+      root@eric-ubuntu:/home/eric/gitrepo# pwd
+      /home/eric/gitrepo
+      root@eric-ubuntu:/home/eric/gitrepo# 
+   
+
+      Quick setup — if you’ve done this kind of thing before
+      or	HTTPS |  SSH https://github.com/ericchong1122/gitrepo.git
+      We recommend every repository include a README, LICENSE, and .gitignore.
+
+      …or create a new repository on the command line
+
+      echo "# gitrepo" >> README.md
+      git init
+      git add README.md
+      git commit -m "first commit"
+      git remote add origin https://github.com/ericchong1122/gitrepo.git
+      git push -u origin master
+
+      …or push an existing repository from the command line
+      git remote add origin https://github.com/ericchong1122/gitrepo.git
+      git push -u origin master
+
+      …or import code from another repository
+      You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+      ***SUMMARY 
+
+      Install Git with Apt : 
+      $ sudo apt-get update
+      $ sudo apt-get install git
+
+      Set Up Git:
+      $ git config --global user.name "Your Name"
+      $ git config --global user.email "youremail@domain.com"
+
+
+ ***git remote set-url origin https://github.com/my_user_name/my_repo.git
